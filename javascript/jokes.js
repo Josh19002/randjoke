@@ -1,7 +1,7 @@
 "use strict";
 async function getJoke1(){
     document.getElementById("jokegen").disabled = true;
-    let response = await fetch("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,sexist,explicit&type=single");
+    let response = await fetch("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,sexist,explicit&type=single&safe-mode");
     let data = await response.json();
     document.getElementById("joke").textContent = "";
     document.getElementById("joke").textContent = data.joke;
@@ -9,7 +9,7 @@ async function getJoke1(){
 };
 async function getJokeMulti(number){
     document.getElementById("jokegen").disabled = true;
-    let response = await fetch("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,sexist,explicit&type=single&amount="+number);
+    let response = await fetch("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,sexist,explicit&safe-mode&type=single&amount="+number);
     let data = await response.json();
     document.getElementById("joke").textContent = "";
     let jokenumber = 1;
