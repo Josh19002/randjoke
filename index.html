@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Joshua Herman | Random Jokes | Humor API</title>
+    <title>Joshua Herman | Random Jokes | JokeAPI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <meta name="description" content="Web Portal for pages relating to WDD 230 for Joshua Herman" />
@@ -14,11 +14,31 @@
     <script defer src="javascript/jokes.js"></script>
   </head>
   <body>
+    <header>
+      <h1>Random Jokes | Joshua Herman | JokeAPI</h1>
+    </header>
     <main>
-      <header>
-        <h1>Random Jokes | Joshua Herman | Humor API</h1>
-      </header>
       <h2>Joke Generator</h2>
+      <p>This site uses <a href="https://v2.jokeapi.dev/">https://v2.jokeapi.dev/</a> to generate jokes on demand.</p>
+      <h3>Number of Jokes to Generate</h3>
+      <select id="jokenum">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <br>
+      <br>
+      <button id="jokegen" onclick="getJoke()">Generate Joke</button>
+      <br>
+      <br>
+      <div id="joke"></div>
     </main>
     <footer>
       <p class="copywrite_year">&copy;</p>

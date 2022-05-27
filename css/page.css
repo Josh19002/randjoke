@@ -1,7 +1,11 @@
+html{
+  background-color: #26A6D1;
+}
 body {
     font-family: "Roboto", sans-serif;
     display: block;
     line-height: 2.57em;
+    min-height: 100%;
   }
   .modified_date {
     display: inline;
@@ -11,6 +15,7 @@ body {
   }
   footer {
     background-color: #155f91;
+    margin-top: 3rem;
     color: white;
     padding: 20px 10px 20px 10px;
     text-align: center;
@@ -31,4 +36,43 @@ body {
   }
   main {
     padding: 0em 2em 1em 3em;
+    text-align: center;
   }
+  #jokegen{
+    border:none;
+    background-color: #155f91;
+    color:#FFFFFF;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width:96%;
+    max-width: 20rem;
+}
+#jokegen:hover{
+  background-color: #155f91;
+  color:#FFFFFF;
+  box-shadow: 0px 0px 10px #000000;
+}
+#jokegen:active{
+  background-color: #4a4a4a;
+  color:#FFFFFF;
+}
+#jokegen:disabled{
+  background-color: #4a4a4a;
+  color:#FFFFFF;
+}
+#jokenum{
+  appearance: none;
+  font-size: 1rem;
+  border: solid 1px #000000;
+  border-radius: 4px;
+  padding: .75rem;
+  color:#000000;
+  width: 100%;
+  max-width: 20rem;
+  background-color: #c4f0ffcc;
+}
+#joke div h3{
+  text-decoration: underline;
+  margin-top: 3rem;
+  margin-bottom: -1rem;
+}
